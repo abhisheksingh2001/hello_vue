@@ -1,22 +1,20 @@
 <template>
     <div class="home">
-
         <div style="flex: 1; text-align: right">
-            <md-field md-inline style="    background-color: yellow;
-                            width: 10%;
+            <md-field md-inline style="background-color: burlywood;
+                            width: 20%;
                             position: absolute;
-                            right: 120px;">
+                            right: 120px;
+                            border-radius: 10px">
                 <label>Search event name</label>
                 <md-input v-model="text" v-on:keyup="handleInput"></md-input>
             </md-field>
         </div>
-
-
         <section class="hero is-dark">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">
-                        Welcome to the Animal Rescue League
+                        Welcome to the Music Concert League
                     </h1>
                     <h2 class="subtitle">
                         Make sure you check out our upcoming events below

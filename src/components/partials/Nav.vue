@@ -2,7 +2,7 @@
     <div>
         <md-toolbar class="md-accent" md-elevation="1" style="background-color: black">
             <div>
-                <h3 class="md-title" style="text-align: left; font-weight: 700">Animal Rescue League</h3>
+                <h3 class="md-title" style="text-align: left; font-weight: 700">Music Concert League</h3>
             </div>
 
             <div style="padding: 10px;">
