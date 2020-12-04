@@ -1,49 +1,45 @@
 <template>
-    <nav class="navbar container" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <strong class="is-size-4">Animal Rescue League</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbar" class="navbar-menu">
-            <div class="navbar-start">
-                <router-link to="/" class="navbar-item">Home</router-link>
-                <router-link to="/about" class="navbar-item">About</router-link>
+    <div>
+        <md-toolbar class="md-accent" md-elevation="1" style="background-color: black">
+            <div>
+                <h3 class="md-title" style="text-align: left; font-weight: 700">Animal Rescue League</h3>
             </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-dark">
-                            <strong>Sign In</strong>
-                        </a>
-                    </div>
-                </div>
+
+            <div style="padding: 10px;">
+                <router-link to="/" style="padding: 10px;">
+                    <span>Home</span>
+                </router-link>
+                <router-link to="/about" style="padding: 10px">
+                    <span>About</span>
+                </router-link>
             </div>
-        </div>
-    </nav>
+
+            <div style="flex: 1; text-align: right">
+                    <md-button class="md-raised" style="background-color: dodgerblue">Sign In</md-button>
+            </div>
+
+        </md-toolbar>
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'Nav'
+        name: 'Nav',
+        data () {
+            return {
+                text: ''
+            }
+        },
+        methods: {
+            handleInput: function () {
+                return this.text
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-    nav {
-        margin-top: 25px;
-        margin-bottom: 30px;
-        a {
-            font-weight: bold;
-            color: #2c3e50;
-            &.router-link-exact-active {
-                color: #d88d00;
-            }
-        }
+    .md-toolbar + .md-toolbar {
+        margin-top: 16px;
     }
 </style>
