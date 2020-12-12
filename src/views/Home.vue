@@ -20,7 +20,9 @@
                         Make sure you check out our upcoming events below
                     </h2>
                     <div class="button-block">
-                        <button class="button is-xl is-dark">Sign Up to Browse Events</button>
+                        <router-link to="/signup" tag="ui-button">
+                            <button class="button is-xl is-dark">Sign Up to Browse Events</button>
+                        </router-link>
                     </div>
                 </div>
             </div>

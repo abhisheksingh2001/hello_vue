@@ -22,6 +22,11 @@ export default new Router({
             path: '/event/:id',
             name: 'eventSingle',
             component: () => import('../views/EventSingle.vue')
+        },
+        {
+            path: '/signup',
+            name: 'signup',
+            component: () => import('../views/SignUp.vue')
         }
     ]
 })
